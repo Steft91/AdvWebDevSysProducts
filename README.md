@@ -23,9 +23,6 @@ Antes de ejecutar, tener instalado:
    git clone https://github.com/Steft91/AdvWebDevSysProducts.git
    cd SysProductCategory
    ```
-1. **Clonar el repositorio**
-git clone https://github.com/Steft91/AdvWebDevSysProducts.git
-
 2. **Levantar todo con Docker Compose**  
    ```bash
    docker-compose up -d --build
@@ -44,28 +41,6 @@ cd SysProductCategory
 4. **Arquitectura y Funcionamiento de los Servicios**  
    El proyecto está dividido en **dos microservicios** (`products-service` y `categories-service`) y un **frontend en Angular**.  
    Cada microservicio maneja la lógica de negocio y la conexión con la base de datos MySQL.
-2. **Levantar todo con Docker Compose**
-
-docker-compose up -d --build
-
-Contiene estos puertos
-- MySQL (Puerto 3307)
-- Microservicio Products (Puerto 8081)
-- Microservicio Categories (Puerto 8083)
-- Frontend Angular (Puerto 4200)
-
-3. **Acceso a la aplicación**
-
-Frontend Angular → http://localhost:4200
-
-La base de datos ya contiene datos de prueba cargados con Postman
-
-4. **Arquitectura y Funcionamiento de los Servicios**
- 
-El proyecto está dividido en **dos microservicios** (`products-service` y `categories-service`) y un **frontend en Angular**.  
-Cada microservicio maneja la lógica de negocio y la conexión con la base de datos MySQL.  
-
----
 
 ### CategoryServiceImpl (Microservicio de Categorías)
 Maneja toda la lógica de negocio para **categorías**:
