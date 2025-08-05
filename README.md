@@ -21,7 +21,7 @@ Antes de ejecutar, tener instalado:
 1. **Clonar el repositorio**  
    ```bash
    git clone https://github.com/Steft91/AdvWebDevSysProducts.git
-   cd SysProductCategory
+   cd AdvWebDevSysProductCategory
    ```
 2. **Levantar todo con Docker Compose**  
    ```bash
@@ -36,7 +36,7 @@ cd SysProductCategory
 
 3. **Acceso a la aplicación**  
    Frontend Angular → [http://localhost:4200](http://localhost:4200)  
-   La base de datos ya contiene datos de prueba cargados con Postman.
+
 
 4. **Arquitectura y Funcionamiento de los Servicios**  
    El proyecto está dividido en **dos microservicios** (`products-service` y `categories-service`) y un **frontend en Angular**.  
