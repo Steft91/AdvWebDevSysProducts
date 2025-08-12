@@ -7,8 +7,14 @@ Este proyecto implementa un sistema CRUD para **Productos** y **Categorías**, d
 - **Orquestación**: Docker Compose
 
 ---
+## Acceso Público al Sistema
+El sistema está desplegado en un servidor Linux con Docker y Docker Compose en **DigitalOcean**, accesible en la siguiente URL:
 
-## Requisitos previos
+🔗 **[Abrir aplicación](http://167.172.30.93:4200)**
+
+---
+
+## Requisitos previos para el sistema localmente
 
 Antes de ejecutar, tener instalado:
 - [Docker](https://docs.docker.com/get-docker/)
@@ -60,12 +66,4 @@ Maneja la lógica de negocio para **productos**:
 
 ---
 
-### WebConfig.java (Configuración CORS)
-Permite que el **frontend en Angular (`localhost:4200`)** pueda comunicarse con las APIs de Spring Boot:
-```java
-registry.addMapping("/**")
-        .allowedOrigins("http://localhost:4200")
-        .allowedMethods("*");
-
-```
 
