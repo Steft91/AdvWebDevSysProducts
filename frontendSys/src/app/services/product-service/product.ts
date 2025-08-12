@@ -12,7 +12,7 @@ export interface Product {
 
 @Injectable({ providedIn: 'root' })
 export class ProductService {
-  private apiUrl = 'http://localhost:8081/api/products';
+  private apiUrl = `http://${window.location.hostname}:8081/api/products`;
 
   constructor(private http: HttpClient) {}
 
