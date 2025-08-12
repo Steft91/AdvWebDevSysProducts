@@ -54,7 +54,7 @@ services:
 
   frontend:
     build:
-      context: ./FrontendSys
+      context: ./frontendSys
       dockerfile: Dockerfile
     container_name: frontend
     ports:
